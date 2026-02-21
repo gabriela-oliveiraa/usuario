@@ -1,4 +1,4 @@
-package com.javanauta.usuario.converter;
+package com.javanauta.usuario.business.converter;
 
 import com.javanauta.usuario.business.dto.EnderecoDTO;
 import com.javanauta.usuario.business.dto.TelefoneDTO;
@@ -17,6 +17,7 @@ public class UsuarioConverter {
         return Usuario.builder()
                 .nome(usuarioDTO.getNome())
                 .email(usuarioDTO.getEmail())
+                .senha(usuarioDTO.getSenha())
                 .enderecos(paraListaEndereco(usuarioDTO.getEnderecos()))
                 .telefones(paraListaTelefone(usuarioDTO.getTelefones()))
                 .build();
@@ -59,6 +60,7 @@ public class UsuarioConverter {
         return UsuarioDTO.builder()
                 .nome(usuario.getNome())
                 .email(usuario.getEmail())
+                .senha(usuario.getSenha())
                 .enderecos(paraListaEnderecoDTO(usuario.getEnderecos()))
                 .telefones(paraListaTelefoneDTO(usuario.getTelefones()))
                 .build();
