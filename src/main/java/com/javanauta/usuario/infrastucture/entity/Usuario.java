@@ -2,6 +2,7 @@ package com.javanauta.usuario.infrastucture.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.jspecify.annotations.Nullable;
@@ -16,6 +17,7 @@ import java.util.List;
 @NoArgsConstructor
 @Entity
 @Table(name = "tb_usuario")
+@Builder
 public class Usuario implements UserDetails {
 
     @Id
