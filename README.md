@@ -1,5 +1,7 @@
 # 👤 Usuario — Microsserviço de Gerenciamento de Usuários
 
+> 🎓 Projeto desenvolvido durante o curso da Javanauta Academy, aplicando conceitos de autenticação, segurança com JWT e integração entre microsserviços utilizando Java e Spring Boot.
+
 Microsserviço responsável pelo cadastro, autenticação e gerenciamento de usuários da plataforma **Agendador de Tarefas**. Desenvolvido com **Spring Boot 4**, **Java 21**, **PostgreSQL** e suporte a autenticação via **JWT**, com deploy containerizado via Docker.
 
 ---
